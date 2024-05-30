@@ -44,8 +44,8 @@ SignToken:
     username:
     password:
   wyyyx:
-    switch: False
-    cookie: 
+    switch: true
+    cookie: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MTcwMzM1NTMsIm5iZiI6MTcxNzAzMzU1MywianRpIjoiNWM2ODNhYjgtNjFiZS00Y2FlLTgyYTctNDMzN2NhMWM3YWE1IiwiaWRlbnRpdHkiOiI2NjU3ZGE1MTAzY2U2MjE0ZjZhYWFiMjUiLCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJudW1iZXIiOjYzNTcwMDYwNCwidGltZXN0YW1wIjoxNzE3MDMzNTUzLCJzYWx0Ijo2N319.6XRoBsedOvAdRC0APbAvGmbi4zw012xmcdEflVhmXZw
   # 请在阿里云盘网页端输入后面代码获取：JSON.parse(localStorage.getItem("token")).refresh_token
   Aliyundrive:
     switch: False
