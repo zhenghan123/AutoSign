@@ -16,8 +16,11 @@ jobs:
         with:
           python-version: 3.7
 
+      - name: upgrade pip
+        run: pip install --upgrade pip
+
       - name: Install dependencies
-        run: pip install requirements.txt
+        run: pip install -r requirements.txt
         
       - name: Run index.py
         
