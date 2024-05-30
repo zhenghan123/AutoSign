@@ -45,7 +45,7 @@ class Miui():
         if self.user != "" and self.password != "":
             cookies = self.Login()
             if cookies == None:
-                pass
+                return "无法获取cookies"
             else:
                 response = requests.post(url=url.Miui_SginUrl,data=datas,headers=self.head,cookies=cookies).json()
                 if response['status'] == 200:
