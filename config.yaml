@@ -27,7 +27,7 @@ SignToken:
     switch: False
     cookie:
   MiUI:
-    switch: False
+    switch: true
     username: 17637011017
     password: 2015xiaoxin.
   XiaoHeiHe:
