@@ -19,9 +19,9 @@ jobs:
       - name: Install dependencies
         run: pip install requests
         
-      - name: Run main.py
+      - name: Run index.py
         
-        run: python main.py 
+        run: python index.py 
         continue-on-error: true
         timeout-minutes: 10
 
