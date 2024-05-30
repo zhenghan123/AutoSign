@@ -23,6 +23,10 @@ Push:
     url: ""
 
 SignToken:
+  RainCloud:
+    switch:false
+    apikey:
+
   Hykb:
     switch: False
     cookie:
