@@ -9,8 +9,8 @@ class Miui():
     """MIUI 历史版本签到
     """
     def __init__(self,SignToken) -> None:
-        self.user = SignToken['17637011017']
-        self.password = SignToken['2015xiaoxin.']
+        self.user = SignToken['username']
+        self.password = SignToken['password.']
         self.head = {
             'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0',
             'Origin':'https://miuiver.com/',
