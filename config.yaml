@@ -23,7 +23,7 @@ Push:
     url: ""
 
 SignToken:
-  RainCloud:
+  Raincloud:
     switch: false
     apikey:
 
