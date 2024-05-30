@@ -10,9 +10,9 @@ class Miui():
     """
     def __init__(self,SignToken) -> None:
         self.user = SignToken['username']
-        self.password = SignToken['password.']
+        self.password = SignToken['password']
         self.head = {
-            'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36',
+            'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0',
             'Origin':'https://miuiver.com/',
             'Referer':'https://miuiver.com/',
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
@@ -57,18 +57,3 @@ class Miui():
         else:
             log.info("MIUI历史版本:账号或密码为空")
             return "账号或密码为空"
-        # if self.user != "" and self.password != "":
-        #     cookies = self.Login()
-        #     if cookies == None:
-        #         return "无法获取cookies"
-        #     else:
-        #         response = requests.post(url=url.Miui_SginUrl,data=datas,headers=self.head,cookies=cookies).json()
-        #         if response['status'] == 200:
-        #             log.info("MIUI历史版本:签到成功积分+1")
-        #             return "签到成功积分+1"
-        #         else:
-        #             log.info("MIUI历史版本:" + response["msg"])
-        #             return response["msg"]
-        # else:
-        #     log.info("MIUI历史版本:账号或密码为空")
-        #     return "账号或密码为空"
