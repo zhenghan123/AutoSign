@@ -45,7 +45,7 @@ class Miui():
         if self.user != "" and self.password != "":
             cookies = self.Login()
             if cookies == None:
-                return "无法获取cookies"
+                pass
             else:
                 response = requests.post(url=url.Miui_SginUrl,data=datas,headers=self.head,cookies=cookies).json()
                 if response['status'] == 200:
@@ -57,3 +57,18 @@ class Miui():
         else:
             log.info("MIUI历史版本:账号或密码为空")
             return "账号或密码为空"
+        # if self.user != "" and self.password != "":
+        #     cookies = self.Login()
+        #     if cookies == None:
+        #         return "无法获取cookies"
+        #     else:
+        #         response = requests.post(url=url.Miui_SginUrl,data=datas,headers=self.head,cookies=cookies).json()
+        #         if response['status'] == 200:
+        #             log.info("MIUI历史版本:签到成功积分+1")
+        #             return "签到成功积分+1"
+        #         else:
+        #             log.info("MIUI历史版本:" + response["msg"])
+        #             return response["msg"]
+        # else:
+        #     log.info("MIUI历史版本:账号或密码为空")
+        #     return "账号或密码为空"
